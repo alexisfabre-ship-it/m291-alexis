@@ -55,17 +55,18 @@ Les recruteurs et clients en Suisse romande qui repèrent un jeune créatif rate
 ## 4. Charte éditoriale & Ambiance visuelle
 
 - **Ton :** simple et direct, en « vous ». Des titres courts.
-- **3 adjectifs :** sobre, créatif, professionnel.
-- **Analogie :** comme un book de graphiste posé sur une table : beaucoup de blanc, les projets mis en avant, une seule couleur pour ce qui est nouveau.
+- **3 adjectifs :** dynamique, urbain, professionnel.
+- **Identité :** ma charte graphique « Alexis Visual » (`design/direction-artistique.md`) : logo étoile graffiti, bleu technologie, typo Gantari Bold + Baskerville.
+- **Analogie :** comme une enseigne de studio créatif : un bleu fort, un logo bien visible, et les projets mis en avant sur un fond calme.
 
 ## Palette
 
-- Fond : blanc cassé
-- Texte : presque noir
-- Accent : orange chaud, réservé au badge « Nouveau » et à l'onglet actif
-- Attention / erreur : rouge, toujours accompagné d'un texte
+- Fond : #efefef (clair)
+- Texte : #121212 (noir)
+- Accent : #006fd3 (bleu) — badge « Nouveau », onglet actif, boutons, en-têtes
+- Attention / erreur : rouge #c62828, toujours accompagné d'un texte
 
-(Couleurs en mots pour l'instant ; hex en s7-s9.)
+Polices : Gantari Bold (titres, interface) et Baskerville (sous-titres, descriptions).
 
 ## 5. Contraintes Techniques & Ergonomiques
 

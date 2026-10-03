@@ -77,20 +77,35 @@ Contrastes mesurés avec la formule WCAG (même calcul que WebAIM Contrast Check
 
 ### Direction artistique retenue
 
+J'applique **ma propre charte graphique « Alexis Visual »** (`design/charte-alexis-visual.png`, détail dans `design/direction-artistique.md`) sur la structure de la proposition 1. La proposition 1 donne la mise en page (beaucoup d'air, une seule couleur d'accent), ma charte donne les couleurs, les polices et le logo.
+
 | Élément | Choix |
 |---|---|
-| Couleur de fond | #FAF8F3 (blanc cassé) |
-| Couleur des cartes | #FFFFFF, bordure 1 px #E6E1D7 |
-| Couleur du texte | #1A1A1A · texte secondaire #5E5A54 |
-| Couleur d'accent (badge, onglet actif) | #C2410C (orange plus foncé que la proposition, pour passer à 5,2:1 avec du texte blanc) |
-| Police des titres | Lora (serif) |
-| Police du texte | Inter (sans-serif) |
-| Forme des cartes | coins arrondis 4 px, pas d'ombre |
-| Ambiance en 3 mots | sobre, éditorial, professionnel |
+| Couleur de fond | #efefef (clair de ma charte) |
+| Couleur des cartes | #ffffff |
+| Couleur du texte | #121212 · texte secondaire #5a5a5a |
+| Couleur d'accent (badge, onglet actif, boutons, en-têtes) | #006fd3 (bleu de ma charte : la technologie) |
+| Police des titres | Gantari Bold (typo principale de ma charte) |
+| Police d'accent (sous-titres, citations, descriptions) | Baskerville (Libre Baskerville en version web gratuite) |
+| Logo | mon étoile graffiti « A » (astronomie + graffiti + flèche vers l'avant) |
+| Forme des cartes | coins arrondis 18 px, en-têtes bleus avec un grand arrondi en bas à gauche (comme les blocs de ma charte) |
+| Ambiance en 3 mots | dynamique, urbaine, professionnelle |
+
+**Contrastes de ma charte (WCAG AA) :**
+
+| Couple | Ratio | Verdict |
+|---|---|---|
+| #121212 sur #efefef | 16,3:1 | ✅ |
+| Blanc sur #006fd3 (badge, boutons) | 5,0:1 | ✅ |
+| #006fd3 sur #ffffff (étiquettes, onglet actif) | 5,0:1 | ✅ |
+| #006fd3 sur #efefef | 4,3:1 | ⚠️ seulement pour les grands titres (≥ 24 px), pas pour le petit texte |
+
+**Maquette finale :** `design/maquette-finale.png` (Actus, fiche projet, Qui je suis).
 
 **Modifications à apporter par rapport à l'image de l'IA :**
-1. Assombrir l'orange du badge de #D9480F à #C2410C pour respecter 4,5:1.
-2. Mettre l'onglet actif dans la couleur d'accent.
-3. Remplacer les initiales « AF » par ma vraie photo (avec un `alt`).
-4. Remplacer les miniatures abstraites par les vrais visuels de mes projets.
-5. Vérifier qu'en 360 px de large, les 4 puces de filtre tiennent encore sur une ligne (sinon, défilement horizontal).
+1. Remplacer l'accent orange de la proposition 1 par mon bleu #006fd3 ; le badge « NOUVEAU » reste le seul élément bleu dans la liste, avec en plus un contour bleu sur la carte.
+2. Mettre l'onglet actif en bleu avec un trait au-dessus (repris de la proposition 2).
+3. Ajouter mon logo dans l'en-tête et en filigrane sur « Qui je suis ».
+4. Remplacer le logo dans le rond de profil par ma vraie photo (avec un `alt`).
+5. Remplacer les miniatures abstraites par les vrais visuels de mes projets.
+6. Ne jamais écrire de petit texte bleu directement sur le fond #efefef (4,3:1).
