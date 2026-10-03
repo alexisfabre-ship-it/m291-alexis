@@ -6,3 +6,4 @@ Je suis **médiamaticien** en 3e année CFC.
 - le design
 - le web
 - parler aux IA
+- faire de la video 
