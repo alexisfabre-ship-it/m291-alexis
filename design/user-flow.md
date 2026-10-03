@@ -1,19 +1,27 @@
 # User flow — tâche principale
 
-**Tâche :** trouver une vidéo de présentation d'entreprise et demander un devis.
+**Tâche :** découvrir le dernier projet d'Alexis et ouvrir le post original.
 
-**Début :** Léa ouvre le lien du portfolio reçu par e-mail, sur son téléphone, dans le train.  
-**Fin réussie :** Léa a envoyé une demande de contact et voit le message « Merci, je vous réponds sous 48 h ».
+**Début :** Sarah ouvre AVisual App sur son téléphone (depuis l'icône, ou en touchant la notification « Alexis a posté un nouveau projet ! » si les notifications sont activées).  
+**Fin réussie :** Sarah a ouvert le post « Nouveau logo café » sur Instagram.
 
 ## Chemin
 
-1. **Accueil (liste)** — Léa voit mon nom, une phrase de présentation, le bandeau « Nouveau post Instagram » et la liste des projets en cartes. *Feedback : les 30 projets sont chargés.*
-2. **Filtre / recherche** — Elle touche la puce **Vidéo**, puis tape « entreprise » dans la recherche. *Feedback : « 4 projets trouvés ».*
-3. **Fiche détaillée** — Elle ouvre « Clip de présentation — Boulangerie du Flon ». Elle voit l'image, l'année, la durée, les outils (DaVinci Resolve) et une description. *Feedback : bouton « ← Retour aux projets » visible.*
-4. **Contact** — Elle touche **« Un projet comme ça ? Me contacter »**. Le formulaire s'ouvre avec le projet déjà indiqué.
-5. **Envoi** — Elle remplit nom, e-mail et message, puis touche **Envoyer**. *Feedback : le bouton affiche « Envoyé ✓ » et un message de remerciement s'affiche.*
+1. **Actus (accueil)** — L'app s'ouvre sur « Actus » : la liste des projets, du plus récent au plus ancien. *Feedback : le premier projet porte le badge « NOUVEAU ».* (wireframe `01-accueil-mobile.png`)
+2. **Recherche / filtre** — Sarah tape « logo » et touche la puce **Instagram**. *Feedback : la puce devient foncée et « 2 projets trouvés » s'affiche.* (wireframe `02-recherche-filtre.png`)
+3. **Fiche projet** — Elle touche la carte « Nouveau logo café ». *Feedback : la carte s'enfonce légèrement, puis la fiche s'ouvre avec la grande image, la date, le réseau, les étiquettes et la description.* (wireframe `03-detail-mobile.png`)
+4. **Action** — Elle touche **« Voir le post sur Instagram ↗ »**. *Feedback : le post s'ouvre dans l'app Instagram (ou le navigateur).*
+5. **Retour** — Elle revient dans AVisual. *Feedback : la liste est au même endroit, avec le filtre encore actif.*
+
+### Flow secondaire : se renseigner sur Alexis
+
+1. Elle touche l'onglet **« Qui je suis »**. *Feedback : l'onglet devient actif (gras).* (wireframe `04-qui-je-suis.png`)
+2. Elle fait défiler : photo, description, compétences, parcours.
+3. Elle touche **Me contacter** : le formulaire s'ouvre. Après envoi, le bouton affiche « Envoyé ✓ ».
 
 ## Variante d'échec
 
-- **Recherche sans résultat :** l'écran dit « Aucun projet pour “drone”. Essayez Vidéo ou Photo. » avec un bouton **Effacer la recherche**.
-- **E-mail invalide :** sous le champ, en rouge et en texte : « L'adresse e-mail doit contenir un @. » (pas d'`alert`).
+- **Aucun résultat :** l'écran dit « Aucun projet pour “drone”. Essayez Tout. » avec un bouton **Effacer la recherche**.
+- **`data.json` ne charge pas :** l'écran dit « Les projets n'ont pas pu être chargés. Réessayez. » avec un bouton **Réessayer** (pas d'`alert`).
+- **Lien cassé ou app du réseau absente :** le lien s'ouvre dans le navigateur.
+- **Notifications refusées :** l'app fonctionne normalement ; le badge « Nouveau » suffit pour repérer les nouveautés.

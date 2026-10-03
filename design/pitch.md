@@ -1,19 +1,25 @@
 # Pitch — mon app M291
 
-**Nom de l'app :** Alexis Studio
+**Nom de l'app :** AVisual App
 
-**En une phrase, elle sert à :** montrer mes projets (vidéo, design, web, photo) dans un portfolio clair sur téléphone, et me contacter pour un projet.
+**En une phrase, elle sert à :** me présenter en détail et montrer mes derniers projets publiés sur mes réseaux pro, avec un badge « Nouveau » (et une notification si le prof valide le service).
 
-**À qui (prénom + âge + situation) :** Léa, 34 ans, responsable communication dans une PME à Lausanne, qui cherche un médiamaticien pour une vidéo de présentation.
+**À qui (prénom + âge + situation) :** Sarah, 32 ans, recruteuse dans une agence de communication à Lausanne. Elle a repéré mon travail et veut le suivre sans vérifier mes réseaux tous les jours.
 
-**La tâche n°1 (celle du flow) :** trouver un projet vidéo qui ressemble à ce dont elle a besoin, puis m'envoyer une demande de contact.
+**La tâche n°1 (celle du flow) :** Sarah ouvre l'app, repère le projet marqué « Nouveau », ouvre sa fiche puis le post original sur Instagram ou LinkedIn.
 
-**Les données (inventées) ressemblent à :** fiches de projets (titre, catégorie, année, outils utilisés, durée, description, image) + mon dernier post Instagram.
+**Les données (inventées) ressemblent à :** fiches de posts (titre, date, réseau, catégorie, image, description, lien) + un profil (photo, description, compétences, parcours).
+Ex. : « Nouveau logo café — 22.09.2026 — Instagram — Identité visuelle — lien »
 
-**Pourquoi ce n'est pas trop grand pour 4 semaines de code :** un seul type de fiche (projet), une liste avec filtre, une fiche détaillée et un formulaire. Pas de compte, pas de serveur : les nouveautés Instagram s'affichent dans un bandeau lu depuis `data.json`, pas en notification push.
+**Pourquoi ce n'est pas trop grand pour 4 semaines de code :**
+- 4 écrans simples : Actus (liste), vue filtrée, fiche projet, Qui je suis.
+- Les posts sont dans `data.json` (30 fiches ou plus), chargés avec `fetch`, sans base de données.
+- Le badge « Nouveau » se calcule avec la date du post (moins de 7 jours).
+- Pas de comptes utilisateurs, pas de serveur à coder, pas de connexion aux API Instagram ou LinkedIn.
+- Les notifications sont un bonus : si le service n'est pas accepté, le badge « Nouveau » suffit.
 
 ## Pour qui ? Quel besoin ? Quelle réponse ?
 
-- **Pour qui :** les clients, maîtres d'apprentissage et recruteurs qui veulent voir rapidement ce que je sais faire.
-- **Besoin non satisfait :** mes projets sont éparpillés (Instagram, YouTube, dossiers d'école). Il faut fouiller pour trouver une vidéo précise, et on ne sait pas comment me contacter.
-- **Réponse UI :** un portfolio mobile, rangé par catégorie, avec recherche, une fiche par projet et un formulaire de contact simple. Un bandeau signale mon dernier post Instagram.
+- **Pour qui :** les recruteurs et clients qui ont repéré mon travail.
+- **Besoin non satisfait :** les algorithmes d'Instagram et LinkedIn cachent mes posts, et personne n'a le temps de vérifier plusieurs profils chaque jour.
+- **Réponse UI :** une app mobile où mes projets sont rangés du plus récent au plus ancien, avec un badge « Nouveau », une recherche, des filtres par réseau et une page « Qui je suis » lisible en une minute.

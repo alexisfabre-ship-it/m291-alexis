@@ -1,33 +1,33 @@
 # Persona
 
-**Prénom et âge :** Léa Martin, 34 ans  
-**Occupation :** responsable communication dans une PME de 25 personnes à Lausanne (menuiserie)  
-**Où et quand iel utilise l'app :** entre deux réunions ou dans le train Lausanne–Morges, après avoir reçu le lien de mon portfolio par e-mail ou sur Instagram  
-**Appareil :** surtout téléphone (écran 390 px), parfois l'ordi au bureau pour montrer à sa direction  
+**Prénom et âge :** Sarah Meier, 32 ans  
+**Occupation :** recruteuse (talent acquisition) dans une agence de communication de 25 personnes à Lausanne  
+**Où et quand iel utilise l'app :** sur son téléphone, entre deux rendez-vous, par sessions courtes de 1 à 3 minutes ; parfois sur son ordinateur au bureau pour montrer un profil à sa directrice  
+**Appareil :** surtout téléphone (iPhone, écran 390 px)  
 
 ## Objectif (une phrase)
 
-Trouver en moins de 2 minutes une vidéo que j'ai réalisée qui ressemble à ce dont elle a besoin, puis me demander un devis.
+Voir en moins de 2 secondes s'il y a un nouveau projet d'Alexis, l'ouvrir, et pouvoir résumer son profil à sa directrice.
 
 ## Phrase typique (ce qu'iel dirait vraiment)
 
-« Je veux juste voir deux ou trois vidéos du même style que ce qu'on cherche, et savoir comment le contacter. Pas lire sa vie. »
+« Je n'ai pas le temps de surveiller dix profils Instagram. Montre-moi ce qui est nouveau, et je regarde. »
 
 ## Ce qui le/la fait fermer l'onglet
 
-- une page qui met longtemps à charger (vidéos lourdes en autoplay) ;
-- devoir créer un compte ou accepter trois popups pour voir un projet ;
-- ne pas trouver comment contacter la personne ;
-- des projets sans date ni explication (« c'était pour qui ? c'était quand ? »).
+- devoir créer un compte pour voir des projets ;
+- des notifications trop fréquentes ou inutiles (elle les désactive tout de suite) ;
+- ne pas savoir ce qui est nouveau depuis sa dernière visite ;
+- devoir reconstituer un parcours à partir de plusieurs réseaux.
 
 ## 3 faits utiles pour le design
 
-1. Elle utilise son téléphone d'une main : filtres et boutons en haut ou à portée du pouce, cibles d'au moins 48 × 48 px.
-2. Elle pense en catégories (« vidéo », « logo », « site ») : le filtre par catégorie doit être visible tout de suite, sous le titre.
-3. Elle veut agir vite : sur chaque fiche projet, un bouton **« Un projet comme ça ? Me contacter »** bien visible.
+1. Elle regarde par sessions très courtes : le badge **« Nouveau »** doit être visible en haut de la liste, écrit en toutes lettres (pas seulement une couleur).
+2. Elle pense par réseau (« c'était sur LinkedIn ? ») : des puces de filtre **Tout / Nouveau / Instagram / LinkedIn** juste sous la recherche, de 48 px de haut.
+3. Elle doit transmettre un résumé : la page **« Qui je suis »** tient sur un écran ou deux (photo, compétences en étiquettes, parcours chronologique) avec un bouton **Me contacter**.
 
 ## Règles de conception déduites
 
-1. Aucune inscription : tous les projets se lisent sans compte.
-2. Sur chaque carte : titre, catégorie, année, en toutes lettres.
-3. Images légères (miniatures), pas de vidéo en lecture automatique.
+1. Aucun compte : tout se consulte librement.
+2. Chaque carte affiche titre, date et réseau en texte.
+3. Un seul tap entre une carte et sa fiche, un seul tap entre la fiche et le post original.
