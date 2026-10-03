@@ -106,6 +106,6 @@ J'applique **ma propre charte graphique « Alexis Visual »** (`design/charte-al
 1. Remplacer l'accent orange de la proposition 1 par mon bleu #006fd3 ; le badge « NOUVEAU » reste le seul élément bleu dans la liste, avec en plus un contour bleu sur la carte.
 2. Mettre l'onglet actif en bleu avec un trait au-dessus (repris de la proposition 2).
 3. Ajouter mon logo dans l'en-tête et en filigrane sur « Qui je suis ».
-4. Remplacer le logo dans le rond de profil par ma vraie photo (avec un `alt`).
+4. ✅ Ma vraie photo est dans le rond de profil (`design/photo-profil.jpg`), avec un `alt` « Photo d'Alexis Fabre ».
 5. Remplacer les miniatures abstraites par les vrais visuels de mes projets.
 6. Ne jamais écrire de petit texte bleu directement sur le fond #efefef (4,3:1).
