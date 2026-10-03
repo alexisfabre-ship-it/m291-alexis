@@ -1,6 +1,8 @@
 # Propositions de design générées par l'IA
 
-Ce dossier contient les trois propositions d'interface générées par une IA d'images (ex. Midjourney, ChatGPT, Gemini, Firefly…), à partir des wireframes de `design/wireframes/`.
+Ce dossier contient les trois propositions d'interface générées par une IA à partir des wireframes de `design/wireframes/` et des prompts ci-dessous.
+
+**Outil utilisé :** Claude, qui a produit chaque proposition en maquette HTML/CSS haute fidélité, capturée ensuite en PNG (même principe que v0.dev). Critique et choix final : `design/critique.md`.
 
 | Fichier | Direction artistique |
 |---|---|
