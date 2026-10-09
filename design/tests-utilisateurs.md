@@ -131,7 +131,47 @@ Tâche secondaire si le temps le permet :
 - le testeur comprend-il qu'il faut ouvrir la fiche avant de voir le post ?
 - le bouton « Me contacter » est-il trouvé sans chercher ?
 
-### B3. Fiche d'observation
+### B3. Fiche d'observation — test réel avec Léo
+
+**App testée :** AVisual App (écrans `01` à `04`, version corrigée après le pré-test B4)
+**Testeur :** Léo (camarade de classe, ne connaissait pas le projet)
+**Observateur :** Alexis Fabre
+**Date :** 09.10.2026
+**Tâche donnée :** « Trouve le projet Instagram le plus récent et ouvre le post. »
+
+#### Test 5 secondes
+
+« C'est une appli pour… » (phrase de Léo) : « C'est une application qui présente les projets d'un graphiste, comme des logos, des affiches et des créations pour les réseaux sociaux. »
+Écart avec l'intention : très faible. Léo a compris que c'est un portfolio de projets récents. Il dit « un graphiste » sans nommer Alexis : le nom « Alexis Visual » est moins retenu que le contenu.
+
+#### Test de localisation (sur image)
+
+Consigne dite : « Montre-moi où tu appuierais pour ne voir que les projets Instagram. »
+
+Le doigt est allé au **bon** contrôle (puce « Instagram », sous la recherche) : **oui**
+Hésitation : aucune observée
+Dit à voix haute : il a compris que les puces filtrent par catégorie ou par réseau
+J'ai aidé : non
+
+#### Déroulé de la tâche complète
+
+| Étape | Ce que Léo a fait | Hésitation ? | Remarque |
+|---|---|---|---|
+| 1. Filtrer « Instagram » | Touche la puce Instagram → écran 02 (2 projets) | non | |
+| 2. Repérer le projet récent | Repère « Logo Café du Marché », daté du 22.09.2026 | non | La date l'aide à choisir le plus récent |
+| 3. Ouvrir la fiche | Touche la carte → écran 03 | non | La flèche › ajoutée après le pré-test n'a pas posé de question |
+| 4. Trouver « Voir le post » | Touche « Voir le post sur Instagram » | non | Le bouton dit clairement où il mène |
+| 5. Bonus : contacter Alexis | Répond : « J'irais dans l'onglet “Qui je suis” pour consulter son profil et chercher ses coordonnées ou un moyen de le contacter. » | **oui** (il « cherche ») | Il ne sait pas d'avance où se trouve le contact |
+
+**Temps total :** environ **30 secondes** · **Tâche réussie :** **oui, sans aide**
+
+#### Constats
+
+1. **Tâche principale fluide :** filtre, date, carte et bouton Instagram ont été compris sans hésitation. Les correctifs du pré-test (flèche sur les cartes, titre sans « Nouveau ») n'ont plus provoqué de question.
+2. **Le contact n'est pas visible depuis Actus :** pour contacter Alexis, Léo doit deviner qu'il faut aller dans « Qui je suis » et y « chercher » un moyen de contact. Le bouton « Me contacter » n'existe que sur cet écran, en bas.
+3. **La marque est peu retenue :** au test 5 secondes, Léo parle d'« un graphiste » sans citer Alexis ni « Alexis Visual ».
+
+### B4. Pré-test simulé par IA (avant le test avec Léo)
 
 > ⚠️ **Test simulé, pas un vrai test utilisateur.** Faute de camarade disponible, le rôle du testeur a été tenu par une IA (Claude), qui a découvert les écrans `01` à `04` sans connaître le projet et a dit à voix haute ce qu'elle comprenait. Ces constats sont des hypothèses : **ils doivent être confirmés par un test avec un vrai camarade** (fiche ci-dessous à remplir à nouveau). Le temps n'a pas été chronométré, car une IA ne lit pas un écran à la vitesse d'un humain.
 
@@ -140,12 +180,12 @@ Tâche secondaire si le temps le permet :
 **Tâche donnée :** trouver le projet Instagram le plus récent et ouvrir le post original
 **Support :** écrans 01 à 04, version avant correctifs (titre « Nouveau logo café », cartes sans flèche)
 
-#### Test 5 secondes
+##### Test 5 secondes
 
 « C'est une appli pour… » (phrase du testeur) : « voir les derniers projets d'un créatif, Alexis Visual ; on peut les filtrer par réseau. »
 Écart avec l'intention : faible. Le mot « Actus » fait d'abord penser à des actualités (news) ; c'est le sous-titre « Les derniers projets d'Alexis » qui lève le doute.
 
-#### Test de localisation (sur image)
+##### Test de localisation (sur image)
 
 Consigne dite : « Montrez où vous tapoteriez pour **ne voir que les projets Instagram**. »
 
@@ -154,7 +194,7 @@ Hésitation : courte, sur le sens des puces : « Nouveau » est un état, « Ins
 Dit à voix haute : « Je peux choisir Nouveau ET Instagram en même temps, ou c'est l'un ou l'autre ? »
 J'ai aidé : non
 
-#### Déroulé de la tâche complète
+##### Déroulé de la tâche complète
 
 | Étape | Ce que le testeur a fait | Hésitation ? | Dit à voix haute |
 |---|---|---|---|
@@ -183,22 +223,22 @@ J'ai aidé : non
 2. **Contraste du petit texte bleu :** #006fd3 (4,33:1) → #0063bd (5,19:1) pour « Effacer les filtres » et « Médiamatique · Lausanne ».
 3. **Cibles tactiles :** puces 38 → 48 px, bouton retour 44 → 48 px, zone de 48 px pour « Effacer les filtres ».
 
-### C2. Deux correctifs ergonomiques prioritaires (déduits du test) — appliqués dans la maquette
+### C2. Deux correctifs ergonomiques prioritaires
 
-1. **Cartes cliquables (constat 1)**
-   **Avant :** carte sans indice d'action. → **Après :** une flèche « › » grise (#5a5a5a, 6,9:1) de 30 px à droite de **chaque** carte, et la carte entière cliquable (≥ 104 px de haut). Prévu en code : `<a href>` sur toute la carte + léger enfoncement au toucher (micro-interaction s13).
-2. **Titre qui répète le badge (constat 2)**
-   **Avant :** « Nouveau logo café » + badge « NOUVEAU ». → **Après :** « **Logo Café du Marché** ». Règle ajoutée pour `data.json` : **aucun titre de projet ne commence par « Nouveau »** (c'est le badge qui dit si c'est récent, calculé sur la date).
+1. **Cartes cliquables et titre sans « Nouveau »** *(constats du pré-test B4, appliqués avant le test avec Léo)*
+   **Avant :** cartes sans indice d'action et titre « Nouveau logo café » qui répète le badge. → **Après :** flèche « › » de 30 px sur chaque carte et titre « Logo Café du Marché ». **Vérifié avec Léo :** aucune hésitation à l'étape 3.
+2. **Contact visible partout** *(constat 2 du test avec Léo)*
+   **Avant :** « Me contacter » uniquement en bas de l'écran « Qui je suis » ; Léo doit « chercher ». → **Après (prévu) :** (a) bouton « Me contacter » placé **juste sous le nom** dans « Qui je suis », visible sans défiler ; (b) lien « Un projet comme ça ? Me contacter » sous le bouton Instagram de **chaque fiche projet**. Objectif : contact atteint en **1 tap** depuis une fiche, au lieu de 2 écrans + recherche.
 
 ### C3. À traiter ensuite
 
-- **Puces (constat 3) :** décider en s12 si les filtres se combinent. Proposition : « Nouveau » devient un interrupteur séparé (« Nouveautés seulement »), et Tout / Instagram / LinkedIn restent un choix unique.
-- **Arc bleu (constat 4) :** supprimé de la maquette.
-- **Contact (étape 5) :** envisager un lien « Me contacter » en bas de chaque fiche projet.
+- **Marque peu retenue (constat 3) :** envisager « Alexis Fabre » en toutes lettres dans l'en-tête (« Les derniers projets d'Alexis Fabre »).
+- **Puces (pré-test, constat 3) :** décider en s12 si les filtres se combinent (« Nouveau » + « Instagram »).
 
 ### C4. À faire pour valider
 
-- [ ] Refaire le test (B3) avec **un vrai camarade** sur la maquette corrigée et comparer : hésite-t-il encore à l'étape 3 ?
+- [x] Test avec un vrai camarade (Léo, B3) sur la maquette corrigée : plus d'hésitation à l'étape 3.
+- [ ] Retester le contact après le correctif 2 (s16, sur l'app en ligne).
 - [ ] Refaire l'audit clavier (A3) sur la page codée en s9.
 
 *(La réussite d'un flow complet se reteste en s16, sur l'app en ligne.)*
