@@ -21,6 +21,8 @@ Les recruteurs et clients en Suisse romande qui repèrent un jeune créatif rate
 
 **Bonus, à valider avec le prof :** notification « Alexis a posté un nouveau projet ! » envoyée à la main via OneSignal (offre gratuite). C'est la seule exception à la règle « JavaScript sans bibliothèque » et elle demande un script externe. Si le prof refuse, l'app reste complète grâce au badge « Nouveau ».
 
+**Règle de données :** aucun titre de projet ne commence par « Nouveau » (c'est le badge, calculé sur la date, qui signale la nouveauté).
+
 **Hors périmètre :** comptes utilisateurs, base de données, serveur à coder, connexion aux API Instagram ou LinkedIn (les posts sont saisis à la main dans `data.json`), commentaires et likes.
 
 ## Écrans
@@ -82,7 +84,22 @@ Polices : Gantari Bold (titres, interface) et Baskerville (sous-titres, descript
 - pas d'`alert()` pour les messages
 - pas de service payant
 
-## Revue croisée (à remplir avec mon binôme avant le commit)
+## Revue croisée
+
+### Relecture 1 — par l'IA (Claude), le 09.10.2026
+
+> ⚠️ Relecture faite par une IA, pas par un binôme. Elle sert de premier contrôle ; **la revue par un camarade (tableau suivant) reste à faire**.
+
+| Question | Réponse / correction |
+|---|---|
+| La tâche principale est-elle claire ? | Oui : repérer le projet récent, ouvrir sa fiche, puis le post original. Le test simulé (`design/tests-utilisateurs.md`) l'a confirmé. Correction faite : le titre « Nouveau logo café » répétait le badge → renommé « Logo Café du Marché », et règle ajoutée : aucun titre ne commence par « Nouveau ». |
+| Le périmètre est-il réaliste en 4 semaines ? | Oui, **si les notifications restent un bonus**. Point d'attention : 30 fiches demandent 30 images. Prévoir des miniatures légères (≤ 100 Ko, 400 × 400 px) et réutiliser les vrais visuels de mes projets plutôt que d'en créer de nouveaux. |
+| Manque-t-il un cas limite ? | Oui, trois : (1) **où part le formulaire de contact ?** Un site GitHub Pages ne peut pas envoyer d'e-mail seul → décider : message de confirmation seulement, lien `mailto:`, ou service gratuit (ex. Formspree, à valider avec le prof) ; (2) **image manquante** dans `data.json` → afficher une miniature de remplacement grise avec le logo ; (3) **puces combinables ou non** (Nouveau + Instagram ?) → règle à fixer en s12. |
+| Autre remarque | Le petit texte bleu doit utiliser `#0063bd` (audit s8). Le mot « Actus » peut faire penser à des actualités : le sous-titre « Les derniers projets d'Alexis » doit rester visible. |
+
+### Relecture 2 — par mon binôme (à remplir en classe)
+
+**Relu par :** _(prénom du binôme)_ le _(date)_
 
 | Question du binôme | Réponse / correction |
 |---|---|
