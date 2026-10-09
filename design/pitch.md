@@ -9,7 +9,7 @@
 **La tâche n°1 (celle du flow) :** Sarah ouvre l'app, repère le projet marqué « Nouveau », ouvre sa fiche puis le post original sur Instagram ou LinkedIn.
 
 **Les données (inventées) ressemblent à :** fiches de posts (titre, date, réseau, catégorie, image, description, lien) + un profil (photo, description, compétences, parcours).
-Ex. : « Nouveau logo café — 22.09.2026 — Instagram — Identité visuelle — lien »
+Ex. : « Logo Café du Marché — 22.09.2026 — Instagram — Identité visuelle — lien »
 
 **Pourquoi ce n'est pas trop grand pour 4 semaines de code :**
 - 4 écrans simples : Actus (liste), vue filtrée, fiche projet, Qui je suis.

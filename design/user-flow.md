@@ -3,13 +3,13 @@
 **Tâche :** découvrir le dernier projet d'Alexis et ouvrir le post original.
 
 **Début :** Sarah ouvre AVisual App sur son téléphone (depuis l'icône, ou en touchant la notification « Alexis a posté un nouveau projet ! » si les notifications sont activées).  
-**Fin réussie :** Sarah a ouvert le post « Nouveau logo café » sur Instagram.
+**Fin réussie :** Sarah a ouvert le post « Logo Café du Marché » sur Instagram.
 
 ## Chemin
 
 1. **Actus (accueil)** — L'app s'ouvre sur « Actus » : la liste des projets, du plus récent au plus ancien. *Feedback : le premier projet porte le badge « NOUVEAU ».* (wireframe `01-accueil-mobile.png`)
 2. **Recherche / filtre** — Sarah tape « logo » et touche la puce **Instagram**. *Feedback : la puce devient foncée et « 2 projets trouvés » s'affiche.* (wireframe `02-recherche-filtre.png`)
-3. **Fiche projet** — Elle touche la carte « Nouveau logo café ». *Feedback : la carte s'enfonce légèrement, puis la fiche s'ouvre avec la grande image, la date, le réseau, les étiquettes et la description.* (wireframe `03-detail-mobile.png`)
+3. **Fiche projet** — Elle touche la carte « Logo Café du Marché ». *Feedback : la carte s'enfonce légèrement, puis la fiche s'ouvre avec la grande image, la date, le réseau, les étiquettes et la description.* (wireframe `03-detail-mobile.png`)
 4. **Action** — Elle touche **« Voir le post sur Instagram ↗ »**. *Feedback : le post s'ouvre dans l'app Instagram (ou le navigateur).*
 5. **Retour** — Elle revient dans AVisual. *Feedback : la liste est au même endroit, avec le filtre encore actif.*
 
