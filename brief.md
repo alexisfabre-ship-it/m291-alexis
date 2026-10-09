@@ -98,13 +98,15 @@ Polices : Gantari Bold (titres, interface) et Baskerville (sous-titres, descript
 | Autre remarque | Le petit texte bleu doit utiliser `#0063bd` (audit s8). Le mot « Actus » peut faire penser à des actualités : le sous-titre « Les derniers projets d'Alexis » doit rester visible. |
 | Compléments (2e passage IA) | (4) le bouton « Envoyé ✓ » ne doit **pas** faire croire qu'un e-mail est parti si le formulaire n'envoie rien : afficher « Message prêt » + lien `mailto:` tant qu'aucun service n'est validé ; (5) badge « Nouveau » calculé avec la **date du jour** (`new Date()`), jamais une date écrite à la main ; une date future n'affiche pas de badge ; (6) recherche sans résultat : message « Aucun projet pour “…”. Essayez Tout. » + bouton Effacer (déjà dans `design/user-flow.md`). |
 
-### Relecture 2 — par mon binôme (à remplir en classe)
+### Relecture 2 — par mon binôme
 
-**Relu par :** _(prénom du binôme)_ le _(date)_
+**Relu par :** Léo · **Date :** 09.10.2026
 
-| Question du binôme | Réponse / correction |
+Léo a lu le brief et la Relecture 1. **Il est d'accord avec tous les points et n'a rien à modifier.**
+
+| Question du binôme | Réponse de Léo |
 |---|---|
-| La tâche principale est-elle claire ? | |
-| Le périmètre est-il réaliste en 4 semaines ? | |
-| Manque-t-il un cas limite ? | |
-| Autre remarque | |
+| La tâche principale est-elle claire ? | Oui, d'accord avec la Relecture 1. |
+| Le périmètre est-il réaliste en 4 semaines ? | Oui, d'accord avec la Relecture 1 (notifications en bonus). |
+| Manque-t-il un cas limite ? | D'accord avec les cas listés dans la Relecture 1, rien à ajouter. |
+| Autre remarque | Rien à modifier. |
