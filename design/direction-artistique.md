@@ -23,12 +23,17 @@ Dans l'app : logo clair dans l'en-tête bleu, en filigrane sur « Qui je suis »
 |---|---|---|
 | Clair | `#efefef` | fond des écrans |
 | Noir | `#121212` | texte, puce de filtre active, fond des visuels sombres |
-| Bleu | `#006fd3` | badge « NOUVEAU », onglet actif, boutons, en-têtes, étiquettes |
+| Bleu | `#006fd3` | aplats : badge « NOUVEAU », boutons, en-têtes ; texte bleu sur fond blanc (étiquettes, onglet actif) |
+| Bleu texte (ajouté en s8) | `#0063bd` | petit texte bleu posé sur le fond clair `#efefef` (liens, « Médiamatique · Lausanne ») |
 | Blanc (neutre ajouté) | `#ffffff` | cartes, barre de recherche, barre d'onglets |
 | Gris (neutre ajouté) | `#5a5a5a` | dates, textes secondaires |
 | Erreur (ajouté) | `#c62828` | messages d'erreur du formulaire, toujours avec un texte |
 
-**Règle d'accessibilité :** le bleu `#006fd3` sur le clair `#efefef` ne fait que 4,3:1. Le petit texte bleu va donc **sur une carte blanche** (5,0:1), et le bleu sur fond clair est réservé aux grands titres et aux aplats.
+**Règles d'accessibilité (audit s8, détail dans `tests-utilisateurs.md`) :**
+
+- `#006fd3` sur `#efefef` = 4,33:1 : interdit pour le petit texte → utiliser `#0063bd` (5,19:1) ou poser le texte sur du blanc (4,98:1).
+- Sur l'en-tête bleu, le petit texte est en **blanc pur** `#ffffff` (4,98:1), pas en `#efefef` (4,33:1).
+- Cibles tactiles : 48 px de haut minimum (puces, boutons, liens).
 
 ## Typographies
 
@@ -52,6 +57,7 @@ Baskerville Old Face n'est pas une police web libre : Libre Baskerville est la v
   --clair: #efefef;
   --noir: #121212;
   --bleu: #006fd3;
+  --bleu-texte: #0063bd;
   --blanc: #ffffff;
   --gris: #5a5a5a;
   --erreur: #c62828;
