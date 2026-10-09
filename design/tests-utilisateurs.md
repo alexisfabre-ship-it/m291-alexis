@@ -133,44 +133,45 @@ Tâche secondaire si le temps le permet :
 
 ### B3. Fiche d'observation
 
-> ✏️ À remplir **pendant** le test avec mon camarade. Je n'écris que ce que j'ai vu et entendu.
+> ⚠️ **Test simulé, pas un vrai test utilisateur.** Faute de camarade disponible, le rôle du testeur a été tenu par une IA (Claude), qui a découvert les écrans `01` à `04` sans connaître le projet et a dit à voix haute ce qu'elle comprenait. Ces constats sont des hypothèses : **ils doivent être confirmés par un test avec un vrai camarade** (fiche ci-dessous à remplir à nouveau). Le temps n'a pas été chronométré, car une IA ne lit pas un écran à la vitesse d'un humain.
 
-**Testeur :** _(prénom du camarade)_
+**Testeur :** Claude (IA, test simulé)
 **Observateur :** Alexis Fabre
 **Tâche donnée :** trouver le projet Instagram le plus récent et ouvrir le post original
+**Support :** écrans 01 à 04, version avant correctifs (titre « Nouveau logo café », cartes sans flèche)
 
 #### Test 5 secondes
 
-J'affiche l'écran Actus 5 secondes, puis je le cache.
-
-« C'est une appli pour… » (phrase du testeur) : _
-Écart avec l'intention (« portfolio qui montre les derniers projets d'Alexis ») : _
+« C'est une appli pour… » (phrase du testeur) : « voir les derniers projets d'un créatif, Alexis Visual ; on peut les filtrer par réseau. »
+Écart avec l'intention : faible. Le mot « Actus » fait d'abord penser à des actualités (news) ; c'est le sous-titre « Les derniers projets d'Alexis » qui lève le doute.
 
 #### Test de localisation (sur image)
 
 Consigne dite : « Montrez où vous tapoteriez pour **ne voir que les projets Instagram**. »
 
-Le doigt est allé au **bon** contrôle (puce « Instagram ») : oui / non / à côté
-Hésitation : _
-Dit à voix haute : _
-J'ai aidé : oui / non
+Le doigt est allé au **bon** contrôle (puce « Instagram ») : **oui**
+Hésitation : courte, sur le sens des puces : « Nouveau » est un état, « Instagram » et « LinkedIn » sont des réseaux, mais les quatre puces ont la même forme sur la même ligne.
+Dit à voix haute : « Je peux choisir Nouveau ET Instagram en même temps, ou c'est l'un ou l'autre ? »
+J'ai aidé : non
 
 #### Déroulé de la tâche complète
 
-| Étape | Ce que le testeur a fait | Hésitation ? (oui / non + durée) | Dit à voix haute |
+| Étape | Ce que le testeur a fait | Hésitation ? | Dit à voix haute |
 |---|---|---|---|
-| 1. Repérer le projet récent | | | |
-| 2. Filtrer « Instagram » | | | |
-| 3. Ouvrir la fiche | | | |
-| 4. Trouver « Voir le post » | | | |
-| 5. (bonus) Trouver « Me contacter » | | | |
+| 1. Repérer le projet récent | Va directement à la 1re carte (contour bleu + badge) | non | « Le premier a un badge NOUVEAU, c'est sûrement lui. » |
+| 2. Filtrer « Instagram » | Touche la puce Instagram | courte | « Le filtre, c'est l'un ou l'autre ? » |
+| 3. Ouvrir la fiche | Hésite avant de toucher la carte | **oui** | « La carte n'a pas de flèche : est-ce que ça ouvre une fiche, ou directement Instagram ? » |
+| 4. Trouver « Voir le post » | Trouve le grand bouton bleu tout de suite | non | « Là c'est clair, le bouton dit où il m'emmène. » |
+| 5. (bonus) Trouver « Me contacter » | Passe par l'onglet « Qui je suis » | courte | « Le contact n'est pas sur Actus, il faut deviner qu'il est dans le profil. » |
 
-**Temps total :** _ min _ s · **Tâche réussie :** oui / non / avec aide
+**Temps total :** non chronométré (test simulé) · **Tâche réussie :** oui, sans aide
 
-**Constats d'hésitation (au moins 2) :**
+**Constats d'hésitation :**
 
-1. _
-2. _
+1. **Les cartes ne montrent pas qu'elles sont cliquables** : aucune flèche ni indice, le testeur ne sait pas si la carte ouvre une fiche ou Instagram (étape 3).
+2. **Le titre « Nouveau logo café » répète le badge « NOUVEAU »** : on ne sait plus si « Nouveau » fait partie du nom du projet ou si c'est l'état (vu au test 5 secondes et dans la fiche projet).
+3. Les puces mélangent un état (« Nouveau ») et des réseaux (« Instagram », « LinkedIn ») sans indiquer si on peut les combiner.
+4. Détail visuel : dans la fiche projet, un arc bleu flottait au-dessus de la tasse et ressemblait à un bug d'affichage.
 
 ---
 
@@ -182,11 +183,22 @@ J'ai aidé : oui / non
 2. **Contraste du petit texte bleu :** #006fd3 (4,33:1) → #0063bd (5,19:1) pour « Effacer les filtres » et « Médiamatique · Lausanne ».
 3. **Cibles tactiles :** puces 38 → 48 px, bouton retour 44 → 48 px, zone de 48 px pour « Effacer les filtres ».
 
-### C2. Deux correctifs ergonomiques prioritaires (déduits du test)
+### C2. Deux correctifs ergonomiques prioritaires (déduits du test) — appliqués dans la maquette
 
-> ✏️ À formuler **après** le test, à partir des constats de la fiche. Format : avant → après, avec un chiffre.
+1. **Cartes cliquables (constat 1)**
+   **Avant :** carte sans indice d'action. → **Après :** une flèche « › » grise (#5a5a5a, 6,9:1) de 30 px à droite de **chaque** carte, et la carte entière cliquable (≥ 104 px de haut). Prévu en code : `<a href>` sur toute la carte + léger enfoncement au toucher (micro-interaction s13).
+2. **Titre qui répète le badge (constat 2)**
+   **Avant :** « Nouveau logo café » + badge « NOUVEAU ». → **Après :** « **Logo Café du Marché** ». Règle ajoutée pour `data.json` : **aucun titre de projet ne commence par « Nouveau »** (c'est le badge qui dit si c'est récent, calculé sur la date).
 
-1. **Avant :** _ → **Après (prévu) :** _
-2. **Avant :** _ → **Après (prévu) :** _
+### C3. À traiter ensuite
+
+- **Puces (constat 3) :** décider en s12 si les filtres se combinent. Proposition : « Nouveau » devient un interrupteur séparé (« Nouveautés seulement »), et Tout / Instagram / LinkedIn restent un choix unique.
+- **Arc bleu (constat 4) :** supprimé de la maquette.
+- **Contact (étape 5) :** envisager un lien « Me contacter » en bas de chaque fiche projet.
+
+### C4. À faire pour valider
+
+- [ ] Refaire le test (B3) avec **un vrai camarade** sur la maquette corrigée et comparer : hésite-t-il encore à l'étape 3 ?
+- [ ] Refaire l'audit clavier (A3) sur la page codée en s9.
 
 *(La réussite d'un flow complet se reteste en s16, sur l'app en ligne.)*
