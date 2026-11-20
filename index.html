@@ -1,127 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation d'Alexis</title>
-
-    <style>
-        /* Mise en page générale */
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f2;
-            color: #222222;
-            line-height: 1.6;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 60px 24px;
-        }
-
-        /* Présentation */
-        header {
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            margin-bottom: 10px;
-            font-family: Georgia, serif;
-            font-size: 3rem;
-            color: #183642;
-        }
-
-        .intro {
-            font-size: 1.25rem;
-        }
-
-        section {
-            margin-bottom: 35px;
-        }
-
-        h2 {
-            font-family: Georgia, serif;
-            color: #183642;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        a {
-            display: inline-block;
-            padding: 10px 16px;
-            background-color: #183642;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        a:hover {
-            background-color: #285565;
-        }
-
-        /* Adaptation pour les petits écrans */
-        @media (max-width: 600px) {
-            main {
-                padding: 40px 20px;
-            }
-
-            h1 {
-                font-size: 2.2rem;
-            }
-
-            .intro {
-                font-size: 1.1rem;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AVisual — Les derniers projets d'Alexis Fabre</title>
+  <meta name="description" content="Portfolio d'Alexis Fabre, médiamaticien à Lausanne : identités visuelles, vidéos, affiches et sites.">
+  <meta name="theme-color" content="#006fd3">
+  <link rel="icon" type="image/png" href="images/logo-bleu.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gantari:wght@400;700;800&family=Libre+Baskerville:ital@0;1&display=swap">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <a class="lien-evitement" href="#liste-cartes">Aller aux projets</a>
 
-    <main>
-        <header>
-            <h1>Alexis</h1>
+  <header class="entete">
+    <p class="marque">
+      <img src="images/logo-blanc.png" alt="" width="34" height="30">
+      <span>Alexis Visual</span>
+    </p>
+    <h1>Actus</h1>
+    <p class="entete-sous-titre">Les derniers projets d'Alexis Fabre</p>
+    <nav aria-label="Recherche et filtres">
+      <!-- La barre de recherche et les filtres viendront en semaine 12 (e3-4) -->
+    </nav>
+  </header>
 
-            <p class="intro">
-                Médiamaticien en 3e année CFC. J'aime le design, le web et la vidéo.
-            </p>
-        </header>
+  <nav class="onglets" aria-label="Navigation principale">
+    <a class="onglet" href="profil.html">
+      <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>
+      Qui je suis
+    </a>
+    <a class="onglet actif" href="index.html" aria-current="page">
+      <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+      Actus
+    </a>
+  </nav>
 
-        <section>
-            <h2>Mes compétences et envies</h2>
+  <main class="contenu">
+    <h2 class="titre-section" id="titre-liste">Tous les projets</h2>
+    <section id="liste-cartes" class="cartes-grille" aria-labelledby="titre-liste" aria-live="polite">
+      <!-- Les cartes de data.json sont injectées ici par js/app.js -->
+      <noscript><p class="etat etat-erreur">JavaScript est désactivé : les projets ne peuvent pas s'afficher.</p></noscript>
+    </section>
+  </main>
 
-            <ul>
-                <li>Design</li>
-                <li>Développement web</li>
-                <li>Vidéo</li>
-                <li>Travailler avec les IA</li>
-            </ul>
-        </section>
+  <footer class="pied">
+    <p>© 2026 — Alexis Fabre · Médiamaticien · Lausanne</p>
+  </footer>
 
-        <section>
-            <h2>Mon GitHub</h2>
-
-            <p>
-                Vous pouvez découvrir mes projets sur mon GitHub.
-            </p>
-
-            <a href="https://github.com/alexisfabre-ship-it" target="_blank">
-                Voir mon GitHub
-            </a>
-        </section>
-    </main>
-
+  <script src="js/app.js"></script>
 </body>
 </html>

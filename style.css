@@ -1,0 +1,391 @@
+/* =========================================================
+   AVisual App — feuille de style (e3-1, semaine 9)
+   Charte Alexis Visual : design/direction-artistique.md
+   Mobile first (390 px), puis bureau dès 768 px.
+   ========================================================= */
+
+/* ---------- 1. Design tokens ---------- */
+:root {
+  /* Couleurs (charte + neutres ajoutés après l'audit s8) */
+  --color-bg: #efefef;           /* clair : fond des écrans (60 %) */
+  --color-surface: #ffffff;      /* cartes, barre d'onglets (30 %) */
+  --color-text: #121212;         /* noir : texte */
+  --color-text-muted: #5a5a5a;   /* dates, textes secondaires : 6,9:1 sur blanc */
+  --color-primary: #006fd3;      /* bleu : aplats, badge, boutons (10 %) */
+  --color-primary-text: #0063bd; /* bleu texte : petit texte bleu sur #efefef (5,19:1) */
+  --color-primary-hover: #0058a8;
+  --color-on-primary: #ffffff;   /* texte sur le bleu : 4,98:1 */
+  --color-border: #dcdcdc;
+  --color-error: #c62828;
+  --color-error-bg: #fdecea;
+
+  /* Typographie */
+  --font-sans: "Gantari", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Libre Baskerville", Georgia, serif;
+  --text-sm: 0.8125rem;   /* 13 px */
+  --text-base: 1rem;      /* 16 px */
+  --text-lg: 1.0625rem;   /* 17 px */
+  --text-xl: 2.5rem;      /* 40 px */
+
+  /* Espacements : grille de 8 px */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+
+  /* Formes */
+  --radius-card: 18px;
+  --radius-thumb: 12px;
+  --radius-pill: 999px;
+  --radius-entete: 0 0 0 46px;
+  --cible-min: 48px;
+}
+
+/* ---------- 2. Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  /* place pour la barre d'onglets fixe en mobile */
+  padding-bottom: calc(80px + var(--space-3));
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-text);
+  outline-offset: 3px;
+}
+
+.lien-evitement {
+  position: absolute;
+  left: var(--space-3);
+  top: -100px;
+  z-index: 10;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-surface);
+  color: var(--color-text);
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+}
+
+.lien-evitement:focus {
+  top: var(--space-3);
+}
+
+/* ---------- 3. En-tête bleu ---------- */
+.entete {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  border-radius: var(--radius-entete);
+  padding: var(--space-5) var(--space-4) var(--space-5);
+}
+
+.entete :focus-visible {
+  outline-color: var(--color-on-primary);
+}
+
+.marque {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0;
+  font-weight: 800;
+}
+
+.entete h1 {
+  margin: var(--space-3) 0 0;
+  font-size: var(--text-xl);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.entete-sous-titre {
+  margin: var(--space-2) 0 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+/* ---------- 4. Contenu ---------- */
+.contenu {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-3);
+}
+
+.titre-section {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-lg);
+  font-weight: 800;
+}
+
+/* ---------- 5. Grille de cartes (CSS Grid, mobile first) ---------- */
+.cartes-grille {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+.carte {
+  position: relative;
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  min-height: 104px;
+  padding: var(--space-2) var(--space-5) var(--space-2) var(--space-2);
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.carte:hover {
+  box-shadow: 0 6px 16px rgba(18, 18, 18, 0.08);
+}
+
+/* Micro-interaction : la carte s'enfonce au toucher */
+.carte:active {
+  transform: scale(0.98);
+}
+
+.carte.est-nouveau {
+  box-shadow: inset 0 0 0 2px var(--color-primary);
+}
+
+.carte-image {
+  flex: none;
+  width: 84px;
+  height: 84px;
+  border-radius: var(--radius-thumb);
+  object-fit: cover;
+  background: var(--color-bg);
+}
+
+.carte h3 {
+  margin: 0;
+  font-size: var(--text-lg);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* Lien étiré : toute la carte est cliquable (cible > 48 px) */
+.carte h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.carte h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-card);
+}
+
+.carte h3 a:focus-visible {
+  outline: none;
+}
+
+.carte:has(a:focus-visible) {
+  outline: 3px solid var(--color-text);
+  outline-offset: 3px;
+}
+
+.carte .commune,
+.carte .meta {
+  margin: 2px 0 0;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.carte .commune {
+  color: var(--color-primary-text);
+  font-weight: 700;
+}
+
+/* Flèche ajoutée après le test utilisateur (s8) */
+.carte-fleche {
+  position: absolute;
+  right: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-muted);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: var(--space-1);
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+/* ---------- 6. Les 4 états de l'interface (e3-3) ---------- */
+.etat {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: var(--space-4);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+  text-align: center;
+}
+
+.etat-chargement {
+  color: var(--color-text-muted);
+}
+
+.etat-vide {
+  color: var(--color-text);
+}
+
+.etat-erreur {
+  background: var(--color-error-bg);
+  color: var(--color-error);
+  font-weight: 700;
+}
+
+/* ---------- 7. Barre d'onglets (mobile : fixée en bas) ---------- */
+.onglets {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  height: 80px;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+.onglet {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  min-height: var(--cible-min);
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.onglet.actif {
+  color: var(--color-primary);
+}
+
+.onglet.actif::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 44px;
+  height: 3px;
+  background: var(--color-primary);
+  border-radius: 0 0 3px 3px;
+}
+
+.pied {
+  padding: var(--space-4) var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  text-align: center;
+}
+
+.pied p {
+  margin: 0;
+}
+
+/* ---------- 8. Bureau (≥ 768 px) ---------- */
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
+
+  .entete {
+    padding: var(--space-5) max(var(--space-4), calc((100% - 1080px) / 2 + var(--space-3)));
+  }
+
+  .cartes-grille {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Les onglets remontent sous l'en-tête */
+  .onglets {
+    position: static;
+    max-width: 1080px;
+    margin: var(--space-3) auto 0;
+    height: auto;
+    gap: var(--space-2);
+    padding: 0 var(--space-3);
+    background: transparent;
+    border: 0;
+  }
+
+  .onglet {
+    flex: none;
+    flex-direction: row;
+    padding: 0 var(--space-3);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface);
+    font-size: var(--text-base);
+  }
+
+  .onglet.actif::before {
+    display: none;
+  }
+
+  .onglet.actif {
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+  }
+}
+
+@media (min-width: 1100px) {
+  .cartes-grille {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- 9. Accessibilité : mouvement réduit ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+
+  .carte:active {
+    transform: none;
+  }
+}
+
+/* Texte lu par les lecteurs d'écran seulement */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
