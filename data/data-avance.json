@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "titre": "Logo Café du Marché",
+    "categorie": "Identité visuelle",
+    "client": "Café du Marché",
+    "lieuClient": {
+      "nom": "Café du Marché",
+      "adresse": "Place de la Riponne, Lausanne",
+      "coordonnees": {
+        "lat": 46.5227,
+        "lng": 6.6336
+      }
+    },
+    "horaires": {
+      "lundi": [],
+      "mardi": [
+        {
+          "ouverture": "07:00",
+          "fermeture": "18:30"
+        }
+      ],
+      "mercredi": [
+        {
+          "ouverture": "07:00",
+          "fermeture": "18:30"
+        }
+      ],
+      "jeudi": [
+        {
+          "ouverture": "07:00",
+          "fermeture": "18:30"
+        }
+      ],
+      "vendredi": [
+        {
+          "ouverture": "07:00",
+          "fermeture": "22:00"
+        }
+      ],
+      "samedi": [
+        {
+          "ouverture": "08:00",
+          "fermeture": "22:00"
+        }
+      ],
+      "dimanche": [
+        {
+          "ouverture": "09:00",
+          "fermeture": "14:00"
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "titre": "Photos produit montres",
+    "categorie": "Photo",
+    "client": "Atelier horloger Dubois",
+    "lieuClient": {
+      "nom": "Atelier horloger Dubois",
+      "adresse": "Atelier Dubois, Le Sentier",
+      "coordonnees": {
+        "lat": 46.608,
+        "lng": 6.2316
+      }
+    },
+    "horaires": {
+      "lundi": [
+        {
+          "ouverture": "08:00",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "17:30"
+        }
+      ],
+      "mardi": [
+        {
+          "ouverture": "08:00",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "17:30"
+        }
+      ],
+      "mercredi": [
+        {
+          "ouverture": "08:00",
+          "fermeture": "12:00"
+        }
+      ],
+      "jeudi": [
+        {
+          "ouverture": "08:00",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "17:30"
+        }
+      ],
+      "vendredi": [
+        {
+          "ouverture": "08:00",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "16:00"
+        }
+      ],
+      "samedi": [],
+      "dimanche": []
+    }
+  },
+  {
+    "id": 16,
+    "titre": "Étiquettes vin Lavaux",
+    "categorie": "Packaging",
+    "client": "Domaine des Terrasses",
+    "lieuClient": {
+      "nom": "Domaine des Terrasses",
+      "adresse": "Domaine des Terrasses, Cully",
+      "coordonnees": {
+        "lat": 46.4885,
+        "lng": 6.7369
+      }
+    },
+    "horaires": {
+      "lundi": [],
+      "mardi": [],
+      "mercredi": [
+        {
+          "ouverture": "14:00",
+          "fermeture": "18:30"
+        }
+      ],
+      "jeudi": [
+        {
+          "ouverture": "14:00",
+          "fermeture": "18:30"
+        }
+      ],
+      "vendredi": [
+        {
+          "ouverture": "14:00",
+          "fermeture": "19:00"
+        }
+      ],
+      "samedi": [
+        {
+          "ouverture": "10:00",
+          "fermeture": "17:00"
+        }
+      ],
+      "dimanche": []
+    }
+  }
+]
