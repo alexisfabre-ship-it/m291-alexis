@@ -1,0 +1,51 @@
+/* =========================================================
+   S09-AV1 — Container Queries (@container)
+   La carte de projet s'adapte à la largeur de SON conteneur,
+   pas à celle de la fenêtre.
+   ========================================================= */
+
+/* 1. Le parent devient un contexte de conteneur */
+.zone-cartes {
+  container-type: inline-size;
+  container-name: cartes;
+}
+
+/* Carte par défaut (conteneur étroit) : disposition VERTICALE */
+.carte-cq {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  background: #ffffff;
+  border-radius: 18px;
+}
+
+.carte-cq img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.carte-cq h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* 2. Dès que le CONTENEUR fait 400 px : disposition HORIZONTALE */
+@container cartes (min-width: 400px) {
+  .carte-cq {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .carte-cq img {
+    width: 84px;
+    flex: none;
+  }
+
+  .carte-cq h3 {
+    font-size: 1.0625rem;
+  }
+}

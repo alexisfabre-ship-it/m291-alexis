@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S09-AV1 — Démo container queries</title>
+  <link rel="stylesheet" href="container-queries.css">
+  <style>
+    body { margin: 0; padding: 24px; background: #efefef; font-family: system-ui, sans-serif; color: #121212; }
+    .mise-en-page { display: grid; grid-template-columns: 220px 1fr; gap: 24px; }
+    h2 { font-size: 0.9rem; color: #5a5a5a; }
+  </style>
+</head>
+<body>
+  <h1>La même carte, deux conteneurs</h1>
+  <div class="mise-en-page">
+    <div>
+      <h2>Colonne étroite (220 px) → verticale</h2>
+      <div class="zone-cartes">
+        <article class="carte-cq"><img src="../../images/projets/logo-cafe-du-marche.svg" alt=""><h3>Logo Café du Marché</h3></article>
+      </div>
+    </div>
+    <div>
+      <h2>Zone large → horizontale</h2>
+      <div class="zone-cartes">
+        <article class="carte-cq"><img src="../../images/projets/logo-cafe-du-marche.svg" alt=""><h3>Logo Café du Marché</h3></article>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
