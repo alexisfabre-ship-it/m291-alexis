@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "titre": "Logo Café du Marché",
+    "date": "2026-09-22",
+    "annee": 2026,
+    "reseau": "Instagram",
+    "categorie": "Identité visuelle",
+    "client": "Café du Marché",
+    "commune": "Lausanne",
+    "description": "Une tasse dessinée d'un seul trait, pensée pour la vitrine, les gobelets et Instagram.",
+    "outils": [
+      "Illustrator"
+    ],
+    "tags": [
+      "logo",
+      "café",
+      "minimal"
+    ],
+    "misEnAvant": true,
+    "image": "images/projets/logo-cafe-du-marche.svg",
+    "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 2,
+    "titre": "Affiche Festival des Lumières",
+    "date": "2026-09-05",
+    "annee": 2026,
+    "reseau": "LinkedIn",
+    "categorie": "Affiche",
+    "client": "Association Lumières d'hiver",
+    "commune": "Morges",
+    "description": "Affiche A2 en sérigraphie deux couleurs pour un festival de projections nocturnes.",
+    "outils": [
+      "Illustrator",
+      "Photoshop"
+    ],
+    "tags": [
+      "affiche",
+      "festival",
+      "sérigraphie"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/affiche-festival-des-lumieres.svg",
+    "lien": "https://www.linkedin.com/"
+  },
+  {
+    "id": 3,
+    "titre": "Packaging thé Les Alpages",
+    "date": "2026-08-18",
+    "annee": 2026,
+    "reseau": "Instagram",
+    "categorie": "Packaging",
+    "client": "Les Alpages Tisanes",
+    "commune": "Château-d'Œx",
+    "description": "Trois boîtes de tisane illustrées, une couleur par saison, pour une petite marque du Pays-d'Enhaut.",
+    "outils": [
+      "Illustrator",
+      "InDesign"
+    ],
+    "tags": [
+      "packaging",
+      "illustration",
+      "terroir"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/packaging-the-les-alpages.svg",
+    "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 4,
+    "titre": "Motion intro chaîne vidéo",
+    "date": "2026-07-30",
+    "annee": 2026,
+    "reseau": "LinkedIn",
+    "categorie": "Motion",
+    "client": "Projet personnel",
+    "commune": "Lausanne",
+    "description": "Générique animé de 6 secondes avec mon étoile graffiti qui se dessine puis s'envole.",
+    "outils": [
+      "After Effects"
+    ],
+    "tags": [
+      "motion",
+      "logo animé",
+      "générique"
+    ],
+    "misEnAvant": true,
+    "image": "images/projets/motion-intro-chaine-video.svg",
+    "lien": "https://www.linkedin.com/"
+  },
+  {
+    "id": 5,
+    "titre": "Logo club de volley",
+    "date": "2026-06-12",
+    "annee": 2026,
+    "reseau": "Instagram",
+    "categorie": "Identité visuelle",
+    "client": "VBC Renens",
+    "commune": "Renens",
+    "description": "Logo et maillots pour un club de volley amateur : un ballon qui forme la lettre R.",
+    "outils": [
+      "Illustrator"
+    ],
+    "tags": [
+      "logo",
+      "sport",
+      "maillot"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/logo-club-de-volley.svg",
+    "lien": "https://www.instagram.com/"
+  }
+]
