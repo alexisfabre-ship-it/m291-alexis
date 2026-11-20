@@ -110,5 +110,588 @@
     "misEnAvant": false,
     "image": "images/projets/logo-club-de-volley.svg",
     "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 6,
+    "titre": "Clip de présentation boulangerie",
+    "date": "2026-11-17",
+    "annee": 2026,
+    "reseau": "Instagram",
+    "categorie": "Vidéo",
+    "client": "Boulangerie du Flon",
+    "commune": "Lausanne",
+    "description": "Clip vertical de 30 secondes : la fournée du matin, filmée à 5 h, montée sur le rythme du pétrin.",
+    "outils": [
+      "DaVinci Resolve"
+    ],
+    "tags": [
+      "vidéo",
+      "reel",
+      "artisan"
+    ],
+    "misEnAvant": true,
+    "image": "images/projets/clip-de-presentation-boulangerie.svg",
+    "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 7,
+    "titre": "Charte graphique Alexis Visual",
+    "date": "2026-11-03",
+    "annee": 2026,
+    "reseau": "LinkedIn",
+    "categorie": "Identité visuelle",
+    "client": "Projet personnel",
+    "commune": "Lausanne",
+    "description": "Ma propre identité : étoile graffiti en forme de A, bleu technologie, Gantari et Baskerville.",
+    "outils": [
+      "Illustrator",
+      "Figma"
+    ],
+    "tags": [
+      "charte",
+      "logo",
+      "branding"
+    ],
+    "misEnAvant": true,
+    "image": "images/projets/charte-graphique-alexis-visual.svg",
+    "lien": "https://www.linkedin.com/"
+  },
+  {
+    "id": 8,
+    "titre": "Maquette app AVisual",
+    "date": "2026-10-21",
+    "annee": 2026,
+    "reseau": "LinkedIn",
+    "categorie": "Web",
+    "client": "Projet M291",
+    "commune": "Lausanne",
+    "description": "Maquette mobile de mon portfolio : liste des projets, filtres, fiche projet et page Qui je suis.",
+    "outils": [
+      "Figma"
+    ],
+    "tags": [
+      "ui",
+      "mobile",
+      "portfolio"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/maquette-app-avisual.svg",
+    "lien": "https://www.linkedin.com/"
+  },
+  {
+    "id": 9,
+    "titre": "Reel coulisses tournage",
+    "date": "2026-10-08",
+    "annee": 2026,
+    "reseau": "Instagram",
+    "categorie": "Vidéo",
+    "client": "Projet personnel",
+    "commune": "Vevey",
+    "description": "Les coulisses d'un tournage au bord du lac : installation de la lumière et premières prises.",
+    "outils": [
+      "DaVinci Resolve"
+    ],
+    "tags": [
+      "vidéo",
+      "coulisses",
+      "reel"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/reel-coulisses-tournage.svg",
+    "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 10,
+    "titre": "Affiche concert Les Docks",
+    "date": "2026-08-29",
+    "annee": 2026,
+    "reseau": "Instagram",
+    "categorie": "Affiche",
+    "client": "Les Docks",
+    "commune": "Lausanne",
+    "description": "Affiche de concert en typographie déformée, déclinée en story et en bannière web.",
+    "outils": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "tags": [
+      "affiche",
+      "musique",
+      "typographie"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/affiche-concert-les-docks.svg",
+    "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 11,
+    "titre": "Photos produit montres",
+    "date": "2026-08-02",
+    "annee": 2026,
+    "reseau": "LinkedIn",
+    "categorie": "Photo",
+    "client": "Atelier horloger Dubois",
+    "commune": "Le Sentier",
+    "description": "Série de photos produit sur fond noir pour un petit atelier horloger de la Vallée de Joux.",
+    "outils": [
+      "Lightroom",
+      "Photoshop"
+    ],
+    "tags": [
+      "photo",
+      "produit",
+      "horlogerie"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/photos-produit-montres.svg",
+    "lien": "https://www.linkedin.com/"
+  },
+  {
+    "id": 12,
+    "titre": "Site vitrine fleuriste",
+    "date": "2026-07-15",
+    "annee": 2026,
+    "reseau": "LinkedIn",
+    "categorie": "Web",
+    "client": "Fleurs de Saison",
+    "commune": "Nyon",
+    "description": "Site d'une page, responsive, avec horaires, galerie et formulaire de commande simple.",
+    "outils": [
+      "Figma",
+      "VS Code"
+    ],
+    "tags": [
+      "web",
+      "site",
+      "responsive"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/site-vitrine-fleuriste.svg",
+    "lien": "https://www.linkedin.com/"
+  },
+  {
+    "id": 13,
+    "titre": "Logo food truck Tacos Léman",
+    "date": "2026-06-27",
+    "annee": 2026,
+    "reseau": "Instagram",
+    "categorie": "Identité visuelle",
+    "client": "Tacos Léman",
+    "commune": "Genève",
+    "description": "Logo rond façon tampon, pensé pour être peint sur le camion et imprimé sur les sachets.",
+    "outils": [
+      "Illustrator"
+    ],
+    "tags": [
+      "logo",
+      "food",
+      "street"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/logo-food-truck-tacos-leman.svg",
+    "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 14,
+    "titre": "Teaser fête de l'école",
+    "date": "2026-06-05",
+    "annee": 2026,
+    "reseau": "Instagram",
+    "categorie": "Vidéo",
+    "client": "École professionnelle",
+    "commune": "Lausanne",
+    "description": "Teaser de 20 secondes pour la fête de fin d'année, monté sur un beat et des titres animés.",
+    "outils": [
+      "Premiere Pro",
+      "After Effects"
+    ],
+    "tags": [
+      "vidéo",
+      "teaser",
+      "événement"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/teaser-fete-de-l-ecole.svg",
+    "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 15,
+    "titre": "Flyer marché de Noël",
+    "date": "2025-12-01",
+    "annee": 2025,
+    "reseau": "Instagram",
+    "categorie": "Affiche",
+    "client": "Commune d'Échallens",
+    "commune": "Échallens",
+    "description": "Flyer A5 et version Instagram pour le marché de Noël du village, avec carte des stands.",
+    "outils": [
+      "InDesign",
+      "Illustrator"
+    ],
+    "tags": [
+      "flyer",
+      "noël",
+      "print"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/flyer-marche-de-noel.svg",
+    "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 16,
+    "titre": "Étiquettes vin Lavaux",
+    "date": "2026-05-20",
+    "annee": 2026,
+    "reseau": "LinkedIn",
+    "categorie": "Packaging",
+    "client": "Domaine des Terrasses",
+    "commune": "Cully",
+    "description": "Étiquettes pour trois cuvées : une ligne de terrasse de vigne différente pour chaque vin.",
+    "outils": [
+      "Illustrator"
+    ],
+    "tags": [
+      "packaging",
+      "vin",
+      "étiquette"
+    ],
+    "misEnAvant": true,
+    "image": "images/projets/etiquettes-vin-lavaux.svg",
+    "lien": "https://www.linkedin.com/"
+  },
+  {
+    "id": 17,
+    "titre": "Portraits équipe agence",
+    "date": "2026-05-02",
+    "annee": 2026,
+    "reseau": "LinkedIn",
+    "categorie": "Photo",
+    "client": "Agence Pixel & Co",
+    "commune": "Fribourg",
+    "description": "Portraits de 12 collaborateurs sur fond gris, lumière douce, pour la page Équipe du site.",
+    "outils": [
+      "Lightroom"
+    ],
+    "tags": [
+      "photo",
+      "portrait",
+      "corporate"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/portraits-equipe-agence.svg",
+    "lien": "https://www.linkedin.com/"
+  },
+  {
+    "id": 18,
+    "titre": "Animation logo club de foot",
+    "date": "2026-04-18",
+    "annee": 2026,
+    "reseau": "Instagram",
+    "categorie": "Motion",
+    "client": "FC Prilly",
+    "commune": "Prilly",
+    "description": "Animation de 4 secondes du logo pour les vidéos de match et les annonces de transfert.",
+    "outils": [
+      "After Effects"
+    ],
+    "tags": [
+      "motion",
+      "sport",
+      "logo animé"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/animation-logo-club-de-foot.svg",
+    "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 19,
+    "titre": "Affiche exposition photo",
+    "date": "2026-04-03",
+    "annee": 2026,
+    "reseau": "LinkedIn",
+    "categorie": "Affiche",
+    "client": "Galerie du Rhône",
+    "commune": "Sion",
+    "description": "Affiche minimaliste : une seule photo plein cadre et le titre en Baskerville.",
+    "outils": [
+      "InDesign",
+      "Photoshop"
+    ],
+    "tags": [
+      "affiche",
+      "exposition",
+      "photo"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/affiche-exposition-photo.svg",
+    "lien": "https://www.linkedin.com/"
+  },
+  {
+    "id": 20,
+    "titre": "Vidéo recrutement apprentis",
+    "date": "2026-03-21",
+    "annee": 2026,
+    "reseau": "LinkedIn",
+    "categorie": "Vidéo",
+    "client": "Garage Moderne SA",
+    "commune": "Yverdon-les-Bains",
+    "description": "Vidéo de 1 minute où trois apprentis présentent leur métier, sous-titrée en français.",
+    "outils": [
+      "Premiere Pro"
+    ],
+    "tags": [
+      "vidéo",
+      "recrutement",
+      "sous-titres"
+    ],
+    "misEnAvant": true,
+    "image": "images/projets/video-recrutement-apprentis.svg",
+    "lien": "https://www.linkedin.com/"
+  },
+  {
+    "id": 21,
+    "titre": "Logo podcast Les Pieds sur Terre",
+    "date": "2026-03-07",
+    "annee": 2026,
+    "reseau": "Instagram",
+    "categorie": "Identité visuelle",
+    "client": "Podcast Les Pieds sur Terre",
+    "commune": "Neuchâtel",
+    "description": "Logo et vignettes d'épisodes pour un podcast sur l'agriculture locale.",
+    "outils": [
+      "Illustrator",
+      "Photoshop"
+    ],
+    "tags": [
+      "logo",
+      "podcast",
+      "vignette"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/logo-podcast-les-pieds-sur-terre.svg",
+    "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 22,
+    "titre": "Menu restaurant Le Lacustre",
+    "date": "2026-02-20",
+    "annee": 2026,
+    "reseau": "Instagram",
+    "categorie": "Packaging",
+    "client": "Restaurant Le Lacustre",
+    "commune": "Montreux",
+    "description": "Menu plié en trois, papier recyclé, avec illustrations des poissons du lac.",
+    "outils": [
+      "InDesign",
+      "Illustrator"
+    ],
+    "tags": [
+      "menu",
+      "print",
+      "illustration"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/menu-restaurant-le-lacustre.svg",
+    "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 23,
+    "titre": "Photos événement salon",
+    "date": "2026-02-08",
+    "annee": 2026,
+    "reseau": "LinkedIn",
+    "categorie": "Photo",
+    "client": "Salon des Métiers",
+    "commune": "Lausanne",
+    "description": "Reportage photo d'un stand au Salon des Métiers : 40 photos livrées le soir même.",
+    "outils": [
+      "Lightroom"
+    ],
+    "tags": [
+      "photo",
+      "reportage",
+      "événement"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/photos-evenement-salon.svg",
+    "lien": "https://www.linkedin.com/"
+  },
+  {
+    "id": 24,
+    "titre": "Bannières réseaux sociaux",
+    "date": "2026-01-24",
+    "annee": 2026,
+    "reseau": "LinkedIn",
+    "categorie": "Web",
+    "client": "Fiduciaire Martin",
+    "commune": "Bulle",
+    "description": "Kit de bannières LinkedIn, Facebook et signature e-mail aux couleurs de la fiduciaire.",
+    "outils": [
+      "Figma",
+      "Photoshop"
+    ],
+    "tags": [
+      "web",
+      "réseaux sociaux",
+      "kit"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/bannieres-reseaux-sociaux.svg",
+    "lien": "https://www.linkedin.com/"
+  },
+  {
+    "id": 25,
+    "titre": "Court métrage Lumière d'hiver",
+    "date": "2026-01-10",
+    "annee": 2026,
+    "reseau": "Instagram",
+    "categorie": "Vidéo",
+    "client": "Projet personnel",
+    "commune": "Les Diablerets",
+    "description": "Court métrage de 3 minutes tourné à la tombée de la nuit, étalonnage froid et musique libre.",
+    "outils": [
+      "DaVinci Resolve"
+    ],
+    "tags": [
+      "vidéo",
+      "court métrage",
+      "étalonnage"
+    ],
+    "misEnAvant": true,
+    "image": "images/projets/court-metrage-lumiere-d-hiver.svg",
+    "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 26,
+    "titre": "Logo salle de grimpe",
+    "date": "2025-12-15",
+    "annee": 2025,
+    "reseau": "Instagram",
+    "categorie": "Identité visuelle",
+    "client": "Bloc Station",
+    "commune": "Martigny",
+    "description": "Logo géométrique inspiré d'une prise d'escalade, décliné en tampon pour les cartes d'abonnement.",
+    "outils": [
+      "Illustrator"
+    ],
+    "tags": [
+      "logo",
+      "sport",
+      "géométrique"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/logo-salle-de-grimpe.svg",
+    "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 27,
+    "titre": "Motion carte de vœux",
+    "date": "2025-11-28",
+    "annee": 2025,
+    "reseau": "LinkedIn",
+    "categorie": "Motion",
+    "client": "Projet personnel",
+    "commune": "Lausanne",
+    "description": "Carte de vœux animée : des étoiles qui se dessinent et forment 2026.",
+    "outils": [
+      "After Effects"
+    ],
+    "tags": [
+      "motion",
+      "vœux",
+      "étoiles"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/motion-carte-de-vux.svg",
+    "lien": "https://www.linkedin.com/"
+  },
+  {
+    "id": 28,
+    "titre": "Affiche journée portes ouvertes",
+    "date": "2025-11-12",
+    "annee": 2025,
+    "reseau": "Instagram",
+    "categorie": "Affiche",
+    "client": "École professionnelle",
+    "commune": "Lausanne",
+    "description": "Affiche et story pour les portes ouvertes de l'école, avec QR code vers le programme.",
+    "outils": [
+      "Illustrator"
+    ],
+    "tags": [
+      "affiche",
+      "école",
+      "qr code"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/affiche-journee-portes-ouvertes.svg",
+    "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 29,
+    "titre": "Photos pochette single",
+    "date": "2025-10-30",
+    "annee": 2025,
+    "reseau": "Instagram",
+    "categorie": "Photo",
+    "client": "Artiste Nora V.",
+    "commune": "Genève",
+    "description": "Séance photo de nuit sous les néons pour la pochette d'un single électro.",
+    "outils": [
+      "Lightroom",
+      "Photoshop"
+    ],
+    "tags": [
+      "photo",
+      "musique",
+      "néon"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/photos-pochette-single.svg",
+    "lien": "https://www.instagram.com/"
+  },
+  {
+    "id": 30,
+    "titre": "Site portfolio v1",
+    "date": "2025-10-15",
+    "annee": 2025,
+    "reseau": "LinkedIn",
+    "categorie": "Web",
+    "client": "Projet personnel",
+    "commune": "Lausanne",
+    "description": "Première version de mon portfolio en HTML et CSS, avant AVisual App.",
+    "outils": [
+      "VS Code"
+    ],
+    "tags": [
+      "web",
+      "portfolio",
+      "html"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/site-portfolio-v1.svg",
+    "lien": "https://www.linkedin.com/"
+  },
+  {
+    "id": 31,
+    "titre": "Aftermovie tournoi de basket",
+    "date": "2025-09-27",
+    "annee": 2025,
+    "reseau": "Instagram",
+    "categorie": "Vidéo",
+    "client": "Lausanne Basket 3x3",
+    "commune": "Lausanne",
+    "description": "Aftermovie de 45 secondes d'un tournoi 3x3 en plein air, montage rapide au rythme des dunks.",
+    "outils": [
+      "Premiere Pro"
+    ],
+    "tags": [
+      "vidéo",
+      "sport",
+      "aftermovie"
+    ],
+    "misEnAvant": false,
+    "image": "images/projets/aftermovie-tournoi-de-basket.svg",
+    "lien": "https://www.instagram.com/"
   }
 ]
